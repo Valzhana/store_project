@@ -1,0 +1,14 @@
+{% extends 'core_app/base.html' %}
+
+{% block title %}Thank you{% endblock %}
+
+{% block content %}
+<div class="max-w-6xl mx-auto flex flex-wrap items-start py-20 px-6 xl:px-0">
+    <div class="products w-full lg:w-3/4">
+        <h1 class="mb-5 text-3xl">Спасибо, что сделали у нас заказ:)</h1>
+        <p>Оформление заказа успешно завершено. Номер вашего заказа
+        <strong>{{ order.id }}</strong>.</p>
+    </div>
+</div>
+{% endblock %}
+
