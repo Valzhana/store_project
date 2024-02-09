@@ -24,7 +24,7 @@ def create_order(request):
                                          product=product,
                                          price=price,
                                          quantity=quantity)
-            cart.clear()
+            cart.empty_cart()
             return render(request, 'order_app/created.html',
                           {'order': order})
     else:

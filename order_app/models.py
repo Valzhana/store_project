@@ -9,8 +9,8 @@ class Order(models.Model):
     SHIPPED = 'shipped'
 
     STATUS_CHOICES = (
-        (ORDERED, 'Ordered'),
-        (SHIPPED, 'Shipped')
+        (ORDERED, 'Оформлен'),
+        (SHIPPED, 'Выдан')
     )
 
     user = models.ForeignKey(User, related_name='orders', blank=True, null=True, on_delete=models.CASCADE)
